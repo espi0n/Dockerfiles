@@ -12,3 +12,5 @@ RUN cd /home \
     && pip install -r requirements.txt
 
 WORKDIR /home/Belati
+
+EXPOSE 8000
