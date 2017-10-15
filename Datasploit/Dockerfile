@@ -8,4 +8,6 @@ RUN cd /home \
     && cd datasploit \
     && pip install -r requirements.txt
 
+COPY config.py /home/datasploit/config.py
+
 WORKDIR /home/datasploit
