@@ -15,6 +15,8 @@ An OSINT Framework to perform various recon techniques, aggregate all the raw da
 
 ## Steps to build the container
 
+**First fill the credentials in `config.py`. This file automatically gets copied to the container you build.**
+
 - Execute the following command to create a Docker image locally:
   ```bash
   docker build -t datasploit .
