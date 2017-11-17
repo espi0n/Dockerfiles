@@ -3,12 +3,12 @@ LABEL MAINTAINER "Chandrapal <bnchandrapal@protonmail.com>"
 
 RUN cd /home \
     && apt-get update \
-    && apt-get install -y git python python-pip build-essential python-openssl python-pyexiv2 \
+    && apt-get install -y git python python-pip build-essential python-openssl python-pyexiv2 --no-install-recommends \
+    && pip install wheel \
     && git clone https://github.com/espi0n/tinfoleak \
     && cd tinfoleak \
     && pip install -r requirements.txt \
-    && cd Output_Reports \
-    && touch tinfoleak.html
+    && touch Output_Reports/tinfoleak.html
 
 WORKDIR /home/tinfoleak
 
