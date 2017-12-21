@@ -8,7 +8,7 @@ RUN cd /home \
 
 WORKDIR /home/datasploit
 
-RUN git checkout 5a3132d \
+RUN git checkout 004390a \
     && pip install wheel \
     && pip install -r requirements.txt
 
