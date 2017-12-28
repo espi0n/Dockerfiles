@@ -8,8 +8,7 @@ RUN cd /home \
 
 WORKDIR /home/datasploit
 
-RUN git checkout 004390a \
-    && pip install wheel \
+RUN pip install wheel \
     && pip install -r requirements.txt
 
 COPY config.py /home/datasploit/config.py
